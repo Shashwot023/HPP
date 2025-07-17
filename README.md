@@ -45,29 +45,40 @@ An interactive web dashboard for exploring and predicting housing prices using m
 - **Data Processing**: pandas, numpy
 
 ## Installation
+ This project uses `uv` for virtual environment management. Follow these steps to set up the project:
 
 ### Prerequisites
 - Python 3.8 or higher
-- pip package manager
+- uv or pip package manager
 
-### Setup
-
-1. **Clone or navigate to the dashboard directory**:
+1. Clone the repository:
    ```bash
-   cd housing_price_prediction/dashboard
+   git clone https://github.com/Shashwot023/HPP.git
    ```
 
-2. **Install dependencies**:
+2. Create a cirtual environment using `uv`:
+   ```bash
+   uv venv
+   ```
+3. Activate the virtual environment:
+   ```bash
+   # On windows
+   .venv\Scripts\activate
+
+   # On macOS/Linux
+   source .venv/bin/activate
+   ```
+4. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application**:
+5. **Run the application**:
    ```bash
    python3 main.py
    ```
 
-4. **Access the dashboard**:
+6. **Access the dashboard**:
    Open your web browser and navigate to `http://localhost:8000`
 
 ## API Endpoints
